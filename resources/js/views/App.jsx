@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import ReactDOM, { Link } from 'react-dom';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
   render() {
     return (
-      <div><Link to="/home">Click here to go to home page</Link></div>,
-      <div><Link to="/about">Click here to go to about page</Link></div>
+      <div>
+        <div>Click <Link to="/">here</Link> to go to home page.</div>
+        <div>Click <Link to="/about">here</Link> to go to about page.</div>
+      </div>
     );
   }
 }
